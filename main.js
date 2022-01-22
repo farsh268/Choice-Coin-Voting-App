@@ -5,18 +5,16 @@ const prompt = promptSync();
 const baseServer = "https://testnet-algorand.api.purestake.io/ps2";
 const port = "";
 const token = {
-  "X-API-Key": "PU2fwcT4Yj9JUAo0ERRXm5eMkr4824Xx2IqMK8mQ",
+  "X-API-Key": "",
 };
 
 const algodClient = new algosdk.Algodv2(token, baseServer, port);
 // create a testnet account with myalgowallet, keep the mmemonic key;
-const mnemonic =
-  "few recall involve economy husband goose man unfair funny marble point poem muscle manage fault slab perfect kick carbon teach clip home story about involve";
+const mnemonic = "";
 const recoveredAccount = algosdk.mnemonicToSecretKey(mnemonic);
 const address = prompt("Enter escrow address: ");
 const CHOICE_ASSET_ID = 21364625;
-const option_one_address =
-  "7RXJRCHMYPGJKFTONRXAB2D7DGZBGLFIIWULWI45I74YP43KIOILVYYYFI";
+const option_one_address = "";
 const option_zero_address = "";
 
 const accountInfo = await algodClient
